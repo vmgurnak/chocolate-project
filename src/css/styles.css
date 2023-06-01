@@ -88,7 +88,7 @@ img {
 - desktop: 1200px */
 
 .container {
-  max-width: 320px;
+  max-width: 375px;
 
   padding: 0 20px;
   margin-left: auto;
@@ -98,16 +98,16 @@ img {
   outline-offset: -2px;
 }
 
-@media only screen and (min-width: px) {
+@media only screen and (min-width: 768px) {
   .container {
-    max-width: ;
+    max-width: 375px;
+    padding: 0 32px;
   }
 }
 
-@media only screen and (min-width: px) {
+@media only screen and (min-width: 1200px) {
   .container {
-    max-width: px;
-    padding: px;
+    max-width: 1200px;
   }
 }
 
