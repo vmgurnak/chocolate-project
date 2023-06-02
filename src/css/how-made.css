@@ -1,8 +1,15 @@
 .how-made-container {
 }
 
-.how-made-container.container {
+/* .how-made-container.container {
   padding-top: 72px;
+} */
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .how-made-container.container {
+    padding-left: 77px;
+    padding-right: 77px;
+  }
 }
 
 .how-made-title {
@@ -12,9 +19,18 @@
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: var(--);
+  color: var(--black);
 
   margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .how-made-title {
+    font-size: 24px;
+    line-height: 1.17;
+
+    margin-bottom: 50px;
+  }
 }
 
 .how-made-title-accent {
@@ -24,12 +40,31 @@
 .how-made-wrapper {
 }
 
+@media only screen and (min-width: 1200px) {
+  .how-made-wrapper {
+    display: flex;
+    column-gap: 20px;
+  }
+}
+
 .how-made-img {
   margin-bottom: 20px;
+  display: block;
 
   /* outline: 2px solid red;
   outline-offset: -2px; */
 }
+
+.how-made-descr {
+  padding: 20px 14px;
+}
+
+@media only screen and (min-width: 768px) {
+  .how-made-descr {
+    padding: 32px;
+  }
+}
+
 .how-made-subtitle {
   font-weight: 600;
   font-size: 18px;
@@ -38,11 +73,14 @@
   margin-bottom: 20px;
   color: var(--black);
 }
-.how-made-descr {
-  padding: 20px 14px;
+
+@media only screen and (min-width: minwidthpx) {
+  .how-made-subtitle {
+    margin-bottom: 28px;
+  }
 }
+
 .how-made-list {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -55,4 +93,10 @@
 
 .how-made-item:not(:last-child) {
   margin-bottom: 18px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .how-made-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
 }
