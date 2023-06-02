@@ -1,0 +1,58 @@
+.how-made-container {
+}
+
+.how-made-container.container {
+  padding-top: 72px;
+}
+
+.how-made-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--);
+
+  margin-bottom: 32px;
+}
+
+.how-made-title-accent {
+  color: var(--orange);
+}
+
+.how-made-wrapper {
+}
+
+.how-made-img {
+  margin-bottom: 20px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+.how-made-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+
+  margin-bottom: 20px;
+  color: var(--black);
+}
+.how-made-descr {
+  padding: 20px 14px;
+}
+.how-made-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+
+  color: var(--black);
+}
+
+.how-made-item {
+}
+
+.how-made-item:not(:last-child) {
+  margin-bottom: 18px;
+}
