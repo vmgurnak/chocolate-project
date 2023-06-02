@@ -27,8 +27,8 @@
 .how-made-img {
   margin-bottom: 20px;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 .how-made-subtitle {
   font-weight: 600;
