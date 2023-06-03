@@ -1,9 +1,9 @@
 .how-made-container {
 }
 
-/* .how-made-container.container {
-  padding-top: 72px;
-} */
+.how-made-container.container {
+  padding-bottom: 72px;
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .how-made-container.container {
@@ -37,11 +37,11 @@
   color: var(--orange);
 }
 
-.how-made-wrapper {
+.how-made-wrap {
 }
 
 @media only screen and (min-width: 1200px) {
-  .how-made-wrapper {
+  .how-made-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,12 +49,13 @@
   }
 }
 
+.how-made-img-wrap {
+  position: relative;
+}
+
 .how-made-img {
   margin-bottom: 20px;
   display: block;
-
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
 }
 
 @media only screen and (min-width: 1200px) {
@@ -63,13 +64,53 @@
   }
 }
 
-.how-made-descr {
+.how-made-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  color: transparent;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  .how-made-btn {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.how-made-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-34%) translateY(-50%);
+  fill: #ffffff;
+}
+
+@media only screen and (max-width: 767.9px) {
+  .how-made-icon.big {
+    display: none;
+  }
+}
+
+.how-made-descr-wrap {
   padding: 20px 14px;
 }
 
 @media only screen and (min-width: 768px) {
   .how-made-descr {
     padding: 32px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .how-made-descr {
+    flex-basis: 516px;
   }
 }
 
@@ -90,11 +131,7 @@
 }
 
 .how-made-list {
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-
-  color: var(--black);
+  padding-left: 16px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -105,8 +142,18 @@
 
 @media only screen and (min-width: 1200px) {
   .how-made-list {
-    max-width: 425px;
+    max-width: 426px;
   }
+}
+
+.how-made-item {
+  position: relative;
+
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+
+  color: var(--black);
 }
 
 .how-made-item:not(:last-child) {
@@ -120,5 +167,16 @@
 }
 
 .how-made-item::before {
-  content: ;
+  content: '';
+
+  position: absolute;
+  top: 5px;
+  left: -16px;
+
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+
+  background: #4c4c4c;
+  border: 1px solid #eceded;
 }
