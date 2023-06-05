@@ -1,3 +1,7 @@
+.how-made {
+  padding-bottom: 72px;
+}
+
 .how-made-container {
 }
 
@@ -62,6 +66,15 @@
   .how-made-img {
     margin-bottom: 0;
   }
+}
+
+.how-made-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: ;
+  width: 335px;
+  height: 500px;
 }
 
 .how-made-btn {
