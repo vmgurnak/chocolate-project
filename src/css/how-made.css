@@ -55,17 +55,17 @@
 
 .how-made-img-wrap {
   position: relative;
-}
-
-.how-made-img {
   margin-bottom: 20px;
-  display: block;
 }
 
 @media only screen and (min-width: 1200px) {
-  .how-made-img {
+  .how-made-img-wrap {
     margin-bottom: 0;
   }
+}
+
+.how-made-img {
+  display: block;
 }
 
 .how-made-video {
