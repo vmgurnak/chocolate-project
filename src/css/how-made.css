@@ -1,3 +1,5 @@
+/* Section how-it's-made */
+
 .how-made {
   padding-bottom: 72px;
 }
@@ -53,6 +55,8 @@
   }
 }
 
+/* how-made-image */
+
 .how-made-img-wrap {
   position: relative;
   margin-bottom: 20px;
@@ -68,14 +72,37 @@
   display: block;
 }
 
+/* how-made-video */
+
 .how-made-video {
   position: absolute;
-  left: 0;
   top: 0;
-  display: ;
-  width: 335px;
-  height: 500px;
+  left: 0;
+
+  overflow: hidden;
+
+  border-radius: 15px;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
+
+.how-made-video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* button-video */
 
 .how-made-btn {
   position: absolute;
